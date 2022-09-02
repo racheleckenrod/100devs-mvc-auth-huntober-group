@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <%
+    const date = new Date();
+    // const finalDay = new Date("10/11/2022");
+    // const differenceInTime = date.getDay() - finalDay.getDay()
+    
+    const now = new Date().getTime()
+    const dueDate = new Date("10/11/2022")
+    const difference = dueDate - now
+    const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24))
+    
+    %>
+    <h2>Today is <%=date.toLocaleDateString() %></h2>
+    <h2>There are <%= daysLeft%> days until the 100 hours project is due</h2>
+    <h1>The Hunt!!</h1>
+    <table>
+        <tbody>
+            <tr class="task-header">
+                <td>Task</td>
+                <td>Due Date</td>
+                <td>Category</td>
+                <td></td>
+            </tr>
+            <!-- forEach - run through daysLeft function, sort, then forEach into EJS view -->
+    <% todos.sort((a, b) => a.dueDate - b.dueDate).forEach( el => { %>
+            <tr class="task-row">
+                <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span></td>
+                <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= new Date(el.dueDate).toLocaleDateString() %></span></td>
+                <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.category %></span></td>
+                <td data-id='<%= el._id %>'><span class='del'> Delete </span></td>  
+            </tr>
+    <% }) %>  
+        </tbody>
+    </table>  
+
+    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+
+    <form action="/todos/createTodo" method='POST'>
+        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        <input type="date" placeholder="Enter Due Date" name='todoDueDate'>
+        <input type="text" placeholder="Enter Category" name='todoCategory'>
+        <input type="submit">
+    </form>
+
+    <aside>
+        <div class="hitlist-container">
+            <div class="hitlist-num">
+                <span>There's <%= %> to go for your hitlist.</span>
+            </div>
+            <div class="hitlist-btn">
+                <button type="button" id="add">+</button>
+                <button type="button" id="minus">-</button>
+            </div>
+        </div>
+    </aside>
+
+    <a href="/logout">Logout</a>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
