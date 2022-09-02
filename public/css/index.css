@@ -6,16 +6,20 @@ body{
 h1{
     color: white;
     font-size: 4rem;
+    margin-left: 1rem;
 }
 h3{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 30%;
+    margin-left: 1rem;
+    
 }
 
 a{
     color: white;
     font-size: 6rem;
+    text-decoration: none;
     margin-left: 1rem;
 }
 footer{
