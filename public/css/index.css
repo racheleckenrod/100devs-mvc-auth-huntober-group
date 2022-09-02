@@ -1,0 +1,28 @@
+body{
+    background-image: url("e-witsoe.jpg");
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    font-size: 4rem;
+}
+h3{
+    color: white;
+    font-size: 3rem;
+    width: 30%;
+}
+
+a{
+    color: white;
+    font-size: 6rem;
+    margin-left: 1rem;
+}
+footer{
+    color: white;
+    font-size: 1rem;
+    margin-top: 10%;
+}
+footer a{
+    font-size: 1rem;
+}
