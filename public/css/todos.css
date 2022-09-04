@@ -25,6 +25,7 @@ h2:last-of-type {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+
 }
 
 .category.btn {
@@ -32,6 +33,7 @@ h2:last-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 
   padding: .75rem .5rem .5rem .5rem;
 }
@@ -45,6 +47,10 @@ table {
 /* // Rows */
 .task-row {
   cursor: pointer;
+}
+
+thead {
+  font-weight: bold;
 }
 
 
