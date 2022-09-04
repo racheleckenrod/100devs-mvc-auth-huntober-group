@@ -79,6 +79,7 @@ body{
 body {
     min-height: 100vh;
 }
+/* App wrapper */
 .container {
     margin: auto;
     /* display: flex; */
@@ -94,8 +95,49 @@ body {
     align-items: center;
 }
 
+/* App Content (Transparent white BG) */
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* margin: auto; */
+    padding: 1rem 3rem 1rem 3rem;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.726);
+    text-align: center;
+}
+.content > * {
+    margin-bottom: 3rem;
+}
+.content > *:last-child {
+    margin-bottom: 0;
+}
 
 
+.header-text{
+    color: var(--heading-color);
+    text-shadow: var(--text-shadow);
+    font-size: 5rem;
+
+    font-weight: bold;
+    font-family: var(--font-family-sans);
+
+    padding: 1rem;
+
+    text-align: center;
+    font-variant: small-caps;   
+}
+
+/* // LAYOUT TOOLS */
+.row {
+    width: 100%;
+}
+
+/* ! FOOTER */
 .footer {
     margin-top: auto;
 }
@@ -136,6 +178,8 @@ body {
     transition: .5s;
 
     text-transform: uppercase;
+
+    /* box-shadow: inset 2px 2px 3px white, inset 2px -2px 3px black; */
 }
 
 .btn:last-of-type {

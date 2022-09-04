@@ -1,45 +1,5 @@
 
 
-.content {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    margin: auto;
-    padding: 1rem 3rem 1rem 3rem;
-
-    border: 2px solid black;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.726);
-
-  
-
-    text-align: center;
-}
-
-.content > * {
-    margin-bottom: 3rem;
-}
-
-.content > *:last-child {
-    margin-bottom: 0;
-}
-
-.content h1{
-    color: var(--heading-color);
-    text-shadow: var(--text-shadow);
-    font-size: 5rem;
-
-    font-weight: bold;
-    font-family: var(--font-family-sans);
-
-    padding: 1rem;
-
-    text-align: center;
-    font-variant: small-caps;
-    
-}
 .content h3{
     /* color: white; */
     font-size: 3rem;
