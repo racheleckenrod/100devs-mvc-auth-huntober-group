@@ -70,8 +70,9 @@ body {
 /* // BACKGROUND */
 body{
     background-image: url("e-witsoe.jpg");
-    background-size: cover;
+    background-size: auto 100vh;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /* // APP SIZE */
