@@ -1,19 +1,27 @@
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
 }
 
-h2:last-of-type {
+h2:last-child {
   margin-bottom: 0;
 }
 
 
 .bold {
   /* font-variant: small-caps; */
+  font-family: var(--font-family-sans);
   font-weight: bold;
   color: var(--heading-color);
   /* text-shadow: var(--text-shadow); */
-  text-shadow: 0 0 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black;
+  text-shadow: var(--text-stroke);
+}
+
+/* ! HITLIST BUTTON STYLES */
+.hitlist-btn {
+  font-size: 1.5rem;
+  padding: .5rem;
+  width: 50px;
 }
 
 /* ! CATEGORIES */

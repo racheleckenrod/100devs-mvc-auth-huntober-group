@@ -33,18 +33,18 @@
             <header>
                 <h1 class="header-text">The Hunt is On.</h1>
 
-                <h2>Today is <%=date.toLocaleDateString() %></h2>
+                <h2>Today is <span class="bold"><%=date.toLocaleDateString() %></span></h2>
 
-                <h2>There are <span class="bold"><%= daysLeft%></span> days until the <span class="bold">100 hours project</span> is due.</h2>
+                <h2>There are <span class="bold"><%= daysLeft%></span> days until the <span class="bold">100 Hours Project</span> is due.</h2>
 
                 <div class="hitlist-container">
                     <div class="hitlist-num">
-                        <h2>There's <span class="bold"><%= %></span> to go for your <span class='bold'>hitlist</span>.</h2>
+                        <h2>There's <span class="bold"><%= 'some numbah' %></span> to go for your <span class='bold'>Hitlist</span>.</h2>
                     </div>
                     
-                    <div class="hitlist-btn">
-                        <button type="button" id="add">+</button>
-                        <button type="button" id="minus">-</button>
+                    <div class="hitlist-btns">
+                        <button type="button" id="minus" class="btn hitlist-btn">-</button>
+                        <button type="button" id="add" class="btn hitlist-btn">+</button>
                     </div>
                 </div>
             </header>
@@ -63,7 +63,7 @@
                         <tr class="task-header">
                             <td>Task</td>
                             <td>Due Date</td>
-                            <td>Category(TEMP)</td>
+                            <!-- <td>Category(TEMP)</td> -->
                             <td>Actions</td>
                         </tr>
                     </thead>
@@ -77,7 +77,7 @@
                                     <!-- Todo Due Date -->
                                     <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= new Date(el.dueDate).toLocaleDateString() %></span></td>
                                     <!-- Todo Category (temporary. won't be needed when category selection in place) -->
-                                    <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.category %></span></td>
+                                    <!-- <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.category %></span></td> -->
                                     <!-- Todo Actions (delete button, maybe more?) -->
                                     <td class='actions-cell' data-id='<%= el._id %>'><i class="fa-solid fa-trash-can del"></i></td>  
                                 </tr>
@@ -90,7 +90,7 @@
             </div>
             
             <div>
-                <h2 class="remaining-todos"><%= user.userName %> has <%= left %> things left to do.</h2>
+                <h2 class="remaining-todos"><%= user.userName %> has <span class="bold"><%= left %></span> things left to do.</h2>
             </div>
             
 
