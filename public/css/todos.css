@@ -46,6 +46,12 @@ h2:last-child {
   padding: .75rem .5rem .5rem .5rem;
 }
 
+.selected-category {
+  border: 2px solid black;
+  background: white;
+  /* background: rgb(255, 129, 26); */
+}
+
 /* ! TASKS TABLE */
 table {
   width: 100%;
@@ -141,10 +147,14 @@ h2.remaining-todos {
 
 
 /* ! NEW TODO FORM */
-input:not(input[type='submit']) {
+input:not(input[type='submit']),
+select {
   width: 100%;
   font-size: 2rem;
 }
+
+
+
 
 .logout-btn {
   font-size: 2rem;

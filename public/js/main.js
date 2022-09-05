@@ -2,6 +2,8 @@ const deleteBtn = document.querySelectorAll('.del')
 const todoItem = document.querySelectorAll('span.not')
 const todoComplete = document.querySelectorAll('span.completed')
 
+const categories = document.querySelectorAll('.category')
+
 Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteTodo)
 })
@@ -12,6 +14,10 @@ Array.from(todoItem).forEach((el)=>{
 
 Array.from(todoComplete).forEach((el)=>{
     el.addEventListener('click', markIncomplete)
+})
+
+Array.from(categories).forEach(categoryBtn => {
+    categoryBtn.addEventListener('click', updateCategory)
 })
 
 async function deleteTodo(){
@@ -65,5 +71,29 @@ async function markIncomplete(){
         location.reload()
     }catch(err){
         console.log(err)
+    }
+}
+
+async function updateCategory(e) {
+    console.log(this.parentNode)
+    const userID = this.dataset.user
+    console.log(userID)
+    console.log(e)
+    const category = e.target.innerText.toLowerCase()
+    console.log(category)
+    try{
+        const response = await fetch('todos/updateCategory', {
+            method: 'put',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify({
+                'category': category,
+                'userID': userID
+            })
+        })
+        const data = await response.json()
+        console.log(data)
+        location.reload()
+    }catch(err){
+        console.warn(err)
     }
 }

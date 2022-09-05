@@ -25,6 +25,8 @@
     const dueDate = new Date("10/11/2022")
     const difference = dueDate - now
     const daysLeft = Math.floor(difference / (1000 * 60 * 60 * 24))
+
+    const categories = ['Daily', 'Weekly', 'Big Picture']
     
     %>
 
@@ -51,11 +53,11 @@
 
             <div class="todos-wrapper">
                 <div class="categories-wrapper">
-                    <ul class="categories">
+                    <ul class="categories" >
                         <!-- SAMPLE CATEGORIES... -->
-                        <li class="category btn">Daily</li>
-                        <li class="category btn">Weekly</li>
-                        <li class="category btn">Big Picture</li>
+                        <% categories.forEach(category => { %>
+                            <li class="category btn <%= category.toLowerCase() === user.selectedCategory.toLowerCase() ? 'selected-category' : '' %>" data-user='<%= user._id %>'><%= category %></li>
+                        <% }) %>
                     </ul>
                 </div>
                 <table>
@@ -69,7 +71,7 @@
                     </thead>
                     <tbody>
                         <!-- forEach - run through daysLeft function, sort, then forEach into EJS view -->
-                        <% todos.sort((a, b) => a.dueDate - b.dueDate).forEach( el => { %>
+                        <% todos.filter(todo => todo.category.toLowerCase() === user.selectedCategory.toLowerCase()).sort((a, b) => a.dueDate - b.dueDate).forEach( el => { %>
                             <div class="task-row-wrapper">
                                 <tr class="task-row">
                                     <!-- Todo Name -->
@@ -95,22 +97,28 @@
             
 
             <form action="/todos/createTodo" method='POST'>
-                <h2>Add A Task:</h2>
+                <!-- <h2>Add A Task:</h2> -->
                 <div class="row form-row">
                     <label>
-                        <span class="form-label">Task Name</span><input type="text" placeholder="Enter Todo Item" name='todoItem'>
+                        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
                     </label>
                     
                 </div>
                 <div class="row form-row">
                     <label>
-                        <span class="form-label">Due Date</span><input type="date" placeholder="Enter Due Date" name='todoDueDate'>
+                        <input type="date" placeholder="Enter Due Date" name='todoDueDate'>
                     </label>
                     
                 </div>
                 <div class="row form-row">
                     <label>
-                        <span class="form-label">Category</span><input type="text" placeholder="Enter Category" name='todoCategory'>
+                        <!-- <span class="form-label">Category</span><input type="text" placeholder="Enter Category" name='todoCategory'>
+                        <span class="form-label">Category</span> -->
+                        <select name='todoCategory'>
+                            <% categories.forEach(category => { %>
+                                <option value="<%= category %>"><%= category %></option>
+                            <% }) %>
+                        </select>
                     </label>
                     
                 </div>

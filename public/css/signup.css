@@ -10,8 +10,7 @@
   display: flex;
 }
 
-.submit-btn,
-.logout-btn {
+.submit-btn {
   font-size: 3rem;
   margin: 1rem .5rem .5rem .5rem;
   padding: 1.25rem 1rem 1rem 1rem;
