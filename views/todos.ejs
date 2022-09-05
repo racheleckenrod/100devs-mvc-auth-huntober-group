@@ -54,7 +54,6 @@
             <div class="todos-wrapper">
                 <div class="categories-wrapper">
                     <ul class="categories" >
-                        <!-- SAMPLE CATEGORIES... -->
                         <% categories.forEach(category => { %>
                             <li class="category btn <%= category.toLowerCase() === user.selectedCategory.toLowerCase() ? 'selected-category' : '' %>" data-user='<%= user._id %>'><%= category %></li>
                         <% }) %>
@@ -65,7 +64,6 @@
                         <tr class="task-header">
                             <td>Task</td>
                             <td>Due Date</td>
-                            <!-- <td>Category(TEMP)</td> -->
                             <td>Actions</td>
                         </tr>
                     </thead>
@@ -78,8 +76,6 @@
                                     <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span></td>
                                     <!-- Todo Due Date -->
                                     <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= new Date(el.dueDate).toLocaleDateString() %></span></td>
-                                    <!-- Todo Category (temporary. won't be needed when category selection in place) -->
-                                    <!-- <td data-id='<%= el._id %>'><span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.category %></span></td> -->
                                     <!-- Todo Actions (delete button, maybe more?) -->
                                     <td class='actions-cell' data-id='<%= el._id %>'><i class="fa-solid fa-trash-can del"></i></td>  
                                 </tr>
