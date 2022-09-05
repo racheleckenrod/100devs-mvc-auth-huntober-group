@@ -1,6 +1,8 @@
 const deleteBtn = document.querySelectorAll('.del')
 const todoItem = document.querySelectorAll('span.not')
 const todoComplete = document.querySelectorAll('span.completed')
+const hitListButtonUp = document.querySelector('#add').addEventListener('click', hitListUp)
+const hitListButtonDown = document.querySelector('#minus').addEventListener('click', hitListDown)
 
 const categories = document.querySelectorAll('.category')
 
@@ -95,5 +97,41 @@ async function updateCategory(e) {
         location.reload()
     }catch(err){
         console.warn(err)
+    }
+}
+
+async function hitListUp() {
+    const userID = this.dataset.user
+    try{
+        const response = await fetch('hitList/hitListUp', {
+            method: 'put',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify({
+
+            })  
+        })
+        const data = await response.json()
+        console.log(data)
+        location.reload()
+    }catch(err){
+        console.log(err)
+    }
+}
+
+async function hitListDown() {
+    const userID = this.dataset.user
+    try{
+        const response = await fetch('hitList/hitListDown', {
+            method: 'put',
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify({
+
+            })  
+        })
+        const data = await response.json()
+        console.log(data)
+        location.reload()
+    }catch(err){
+        console.log(data)
     }
 }

@@ -1,9 +1,10 @@
 const Todo = require('../models/Todo')
 const User = require('../models/User')
-// whatup harry!
-// Hi rachel!
-// Hello!!
-// Atlas here
+const HitList = require('../models/hitlist')
+const hitListController = require('./hitList')
+
+// Create Hitlist function from hitList.js controller
+const createHitList = hitListController.createHitList
 
 
 
@@ -25,13 +26,23 @@ module.exports = {
         try{
             const todoItems = await Todo.find({userId:req.user.id})
             const itemsLeft = await Todo.countDocuments({userId:req.user.id,completed: false})
+            let hitList = await HitList.find({userId:req.user.id})
+            if(!hitList || hitList.length === 0) {
+                console.log('the hitlist is not there, we are trying to make it!')
+                await createHitList(req)
+                hitList = await HitList.find({userID:req.user.id})
+                console.log('did we make it? hitlist is', hitList[0].current)
+            }
+          
             // days left to complete task 
-            res.render('todos.ejs', {todos: todoItems, left: itemsLeft, user: req.user})
+            res.render('todos.ejs', {todos: todoItems, left: itemsLeft, user: req.user, hitList: hitList[0] })
+            // console.log(hitList, hitList[0].current, "hitList")
         }catch(err){
             console.log(err)
         }
     },
     createTodo: async (req, res)=>{
+        // console.log(req, "create")
         try{
             await Todo.create({
                 todo: req.body.todoItem,

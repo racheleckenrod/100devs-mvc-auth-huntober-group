@@ -1,6 +1,7 @@
 const passport = require('passport')
 const validator = require('validator')
 const User = require('../models/User')
+const HitList = require('./hitList')
 
  exports.getLogin = (req, res) => {
     if (req.user) {
@@ -73,6 +74,8 @@ const User = require('../models/User')
       email: req.body.email,
       password: req.body.password
     })
+
+   
   
     User.findOne({$or: [
       {email: req.body.email},
@@ -93,4 +96,14 @@ const User = require('../models/User')
         })
       })
     })
+
+    // try {
+    //   const user = 
+    //   HitList.createHitList(req)
+    // } catch(err) {
+    //   console.log(err)
+    // }
+
   }
+
+  
