@@ -1,4 +1,5 @@
 const Todo = require('../models/Todo')
+const User = require('../models/User')
 // whatup harry!
 // Hi rachel!
 // Hello!!
@@ -75,6 +76,20 @@ module.exports = {
         }catch(err){
             console.log(err)
         }
-    } 
+    },
+    // Update Category
+    updateCategory: async (req, res) => {
+        console.log('Attempting to change category.')
+        console.log(req.body)
+        try {
+            await User.findOneAndUpdate({_id:req.body.userID}, {
+                selectedCategory: req.body.category
+            })
+            console.log('Category updated.')
+            res.json('Category updated.')
+        } catch(err) {
+            console.warn(err)
+        }
+    }
 
 }    

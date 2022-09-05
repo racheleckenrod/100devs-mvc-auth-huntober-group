@@ -1,0 +1,25 @@
+
+
+
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.submit-row {
+  display: flex;
+}
+
+.submit-btn {
+  font-size: 3rem;
+  margin: 1rem .5rem .5rem .5rem;
+  padding: 1.25rem 1rem 1rem 1rem;
+
+  flex: 1;
+}
+
+input[type='password'],
+input[type='email'],
+input[type='text'] {
+  font-size: 2rem;
+}
