@@ -33,7 +33,9 @@ h2:last-child {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .category.btn {
@@ -44,6 +46,7 @@ h2:last-child {
   border-radius: 5px;
 
   padding: .75rem .5rem .5rem .5rem;
+  margin: 0;
 }
 
 .selected-category {
