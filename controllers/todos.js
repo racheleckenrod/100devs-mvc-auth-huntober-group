@@ -30,8 +30,8 @@ module.exports = {
             if(!hitList || hitList.length === 0) {
                 console.log('the hitlist is not there, we are trying to make it!')
                 await createHitList(req)
-                hitList = await HitList.find({userID:req.user.id})
-                console.log('did we make it? hitlist is', hitList[0].current)
+                hitList = await HitList.find({userId:req.user.id})
+                console.log('did we make it? hitlist is', hitList.current)
             }
           
             // days left to complete task 
