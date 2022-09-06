@@ -31,12 +31,12 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
   <tbody>
     <tr width="100%">
       <td width="50%">
-        <p align="center"><a href="https://github.com/ramblingadam"><img src="https://avatars.githubusercontent.com/u/96756923?s=96&v=4"></a><br /> 
+        <p align="center"><a href="https://github.com/ramblingadam"><img src="https://avatars.githubusercontent.com/u/96756923?s=120&v=4"></a><br /> 
         <strong>Adam Morsa</strong><br /> 
           I'm adam and I learned this</p>
       </td>
       <td width="50%">
-        <p align="center"><a href="https://github.com/racheleckenrod"><img src="https://avatars.githubusercontent.com/u/101522574?s=88&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"></a><br />
+        <p align="center"><a href="https://github.com/racheleckenrod"><img src="https://avatars.githubusercontent.com/u/101522574?s=120&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"></a><br />
         <strong>Rachel Eckenrod</strong><br />
           I'm Rachel and I learned a lot about using GitHub in addition to getting more comfortable with the MVC architecture.</p>
       </td>
