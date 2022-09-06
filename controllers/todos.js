@@ -103,15 +103,14 @@ module.exports = {
 
         try {
             await Todo.insertMany([
-                {todo: 'Push String Methods Codewars 2', completed: false, dueDate: today, category: 'Daily', userId: user},
-                {todo: 'Team Project 7', completed: false, userId: user, dueDate: nextWeek, category: 'Big Picture'},
+                {todo: 'Push String Methods Codewars', completed: false, dueDate: today, category: 'Daily', userId: user},
                 {todo: 'Turn in homework', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
                 {todo: 'Networking - 1 coffee chat', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
                 {todo: 'Networking - 3 connections', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
                 {todo: 'Update networking sheet', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
                 {todo: 'Interview ANKI cards', completed: false, dueDate: today, userId: user, category: 'Interview Prep'},
-                {todo: 'Checklist', completed: false, userId: user, dueDate: '2022-08-30', category: 'Big Picture'},
-                {todo: 'Team Project', completed: false, userId: user, dueDate: '2022-09-06', category: 'Big Picture'},
+                {todo: 'Team Project', completed: false, userId: user, dueDate: nextWeek, category: 'Big Picture'},
+                {todo: 'Professional Checklist', completed: false, userId: user, dueDate: '2022-08-30', category: 'Big Picture'},
                 {todo: 'Hitlist', completed: false, userId: user, dueDate: '2022-09-13', category: 'Big Picture'},
                 {todo: 'Client signature/Approved PR', completed: false, userId: user, dueDate: '2022-09-27', category: 'Big Picture'},
                 {todo: '10 Premium Apps', completed: false, userId: user, dueDate: '2022-10-11', category: 'Big Picture'},
