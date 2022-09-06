@@ -2,6 +2,7 @@ const Todo = require('../models/Todo')
 const User = require('../models/User')
 const HitList = require('../models/hitlist')
 const hitListController = require('./hitList')
+const TodoTask = require('../models/Todo')
 
 // Create Hitlist function from hitList.js controller
 const createHitList = hitListController.createHitList
@@ -9,7 +10,6 @@ const createHitList = hitListController.createHitList
 
 
 module.exports = {
-
     populateDefault: async (req, res) =>{
         const defaultTodos = [
             {
@@ -101,6 +101,26 @@ module.exports = {
         } catch(err) {
             console.warn(err)
         }
+    },
+    // getEdit: (req, res) => {
+    //   const id = req.params.id;
+    //   TodoTask.find({}, (err, tasks) => {
+    //     res.render("edit.ejs", {
+    //       todoTasks: tasks, idTask: id
+    //     });
+    //   });
+    // },
+    updateTaskName: (req, res) => {
+      const id = req.body.todoIdFromJSFile;
+      TodoTask.findByIdAndUpdate(
+        id,
+        {
+          todo: req.body.newName,
+        //   content: req.body.content
+        },
+        err => {
+          if (err) return res.status(500).send(err);
+          res.redirect("/");
+        });
     }
-
 }    

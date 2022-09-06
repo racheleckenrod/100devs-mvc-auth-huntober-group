@@ -15,4 +15,7 @@ router.delete('/deleteTodo', todosController.deleteTodo)
 
 router.put('/updateCategory', todosController.updateCategory)
 
+router.put('/edit', todosController.updateTaskName)
+
+
 module.exports = router

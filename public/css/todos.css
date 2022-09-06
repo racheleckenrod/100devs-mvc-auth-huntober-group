@@ -36,7 +36,6 @@ h2:last-child {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: black solid 1px;
 }
 
 .category.btn {
@@ -45,7 +44,6 @@ h2:last-child {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-
   padding: .75rem .5rem .5rem .5rem;
   margin: 0;
 }
