@@ -31,31 +31,31 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
   <tbody>
     <tr width="100%">
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/96756923?s=96&v=4"><br /> 
+        <p align="center"><a href="https://github.com/ramblingadam"><img src="https://avatars.githubusercontent.com/u/96756923?s=96&v=4"></a><br /> 
         <strong>Adam Morsa</strong><br /> 
           I'm adam and I learned this</p>
       </td>
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/101522574?s=88&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"><br />
+        <p align="center"><a href="https://github.com/racheleckenrod"><img src="https://avatars.githubusercontent.com/u/101522574?s=88&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"></a><br />
         <strong>Rachel Eckenrod</strong><br />
           I'm rachel and I learned that</p>
       </td>
     </tr>
     <tr width="100%">
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/11248186?s=120&v=4"><br />
+        <p align="center"><a href="https://github.com/atlasmac"><img src="https://avatars.githubusercontent.com/u/11248186?s=120&v=4"></a><br />
         <strong>Atlas McKinley</strong><br />
           I'm Atlas and I learned that</p>
       </td>
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/98671035?s=120&v=4"><br />
+        <p align="center"><a href="https://github.com/andiedoescode"><img src="https://avatars.githubusercontent.com/u/98671035?s=120&v=4"></a><br />
         <strong>Andrea Pang</strong><br />
           I'm Andrea and I learned that</p>
       </td>
     </tr>
     <tr width="100%">
       <td colspan="2" width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/102705123?s=120&v=4"><br />
+        <p align="center"><a href="https://github.com/Harry-Ashenden"><img src="https://avatars.githubusercontent.com/u/102705123?s=120&v=4"></a><br />
          <strong>Harry Ashenden</strong><br />
           I'm Harry and I learned that</p>
       </td>
