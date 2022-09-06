@@ -7,7 +7,7 @@ const hitListController = require('./hitList')
 const createHitList = hitListController.createHitList
 
 //Creating default to dos
-const defaultTodo = require('../models/Todo')
+// const defaultTodo = require('../models/Todo')
 
 
 
@@ -94,22 +94,34 @@ module.exports = {
             console.warn(err)
         }
     },
-    //Populate default to dos
-    populateDefault: async (req, res) => {
-        const user = req.body.userID
-        defaultTodo.insertMany([
+    //Populate with default tasks
+    populate: async (req, res)=>{
+        // console.log(req, 'default populated')
+        const user = req.user.id
+        const today = new Date()
+        const nextWeek = today.setDate(today.getDate() + 7)
 
-        ])
-        
-        // const defaultTodos = [
-        //     {
-        //         todo: 'name',
-        //         dueDate: 'somedate',
-        //         category: 'category',
-        //         completed: false,
-        //         userId: userId
-        //     },
-        // ]
-    },
-
+        try {
+            await Todo.insertMany([
+                {todo: 'Push String Methods Codewars 2', completed: false, dueDate: today, category: 'Daily', userId: user},
+                {todo: 'Team Project 7', completed: false, userId: user, dueDate: nextWeek, category: 'Big Picture'},
+                {todo: 'Turn in homework', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
+                {todo: 'Networking - 1 coffee chat', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
+                {todo: 'Networking - 3 connections', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
+                {todo: 'Update networking sheet', completed: false, dueDate: nextWeek, userId: user, category: 'Weekly'},
+                {todo: 'Interview ANKI cards', completed: false, dueDate: today, userId: user, category: 'Interview Prep'},
+                {todo: 'Checklist', completed: false, userId: user, dueDate: '2022-08-30', category: 'Big Picture'},
+                {todo: 'Team Project', completed: false, userId: user, dueDate: '2022-09-06', category: 'Big Picture'},
+                {todo: 'Hitlist', completed: false, userId: user, dueDate: '2022-09-13', category: 'Big Picture'},
+                {todo: 'Client signature/Approved PR', completed: false, userId: user, dueDate: '2022-09-27', category: 'Big Picture'},
+                {todo: '10 Premium Apps', completed: false, userId: user, dueDate: '2022-10-11', category: 'Big Picture'},
+                {todo: 'Beautiful MVP', completed: false, userId: user, dueDate: '2022-09-27', category: '100 Hours'},
+                {todo: 'Completed project', completed: false, userId: user, dueDate: '2022-10-11', category: '100 Hours'},
+                ])
+            console.log('default task added')
+            res.redirect('/todos')
+        }catch (err) {
+            console.log(err)
+        }
+    }
 }    
