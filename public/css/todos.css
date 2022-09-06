@@ -8,14 +8,6 @@ h2:last-child {
 }
 
 
-.bold {
-  /* font-variant: small-caps; */
-  font-family: var(--font-family-sans);
-  font-weight: bold;
-  color: var(--heading-color);
-  /* text-shadow: var(--text-shadow); */
-  text-shadow: var(--text-stroke);
-}
 
 /* ! HITLIST BUTTON STYLES */
 .hitlist-btn {
@@ -43,8 +35,8 @@ h2:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 60px;
   border-radius: 5px;
-
   padding: .75rem .5rem .5rem .5rem;
   margin: 0;
 }
@@ -138,6 +130,11 @@ thead td {
 .task-row:hover .actions-cell {
   text-shadow: none;
 }
+
+.edit:hover {
+  text-shadow: 0 0 3px green, 0 0 4px green;
+}
+
 .del:hover {
   text-shadow: 0 0 1px red, 0 0 2px red;
 }
@@ -156,7 +153,11 @@ select {
   font-size: 2rem;
 }
 
-
+/* DEFAULT BUTTON*/
+.default-btn {
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+}
 
 
 .logout-btn {
@@ -164,6 +165,38 @@ select {
 
   margin: 1rem .5rem .5rem .5rem;
   padding: 1.25rem 1rem 1rem 1rem;
-
+  width: 50%;
   flex: 1;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px){
+.categories{
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.category.btn{
+  min-width: 220px;
+  min-height: none;
+}
+
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.footer a {
+  /* padding: 0 1rem 0 1rem; */
+  color: orange;
+}
+
+.photoCredit a {
+  color: black;
 }

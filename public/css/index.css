@@ -16,10 +16,12 @@ a {
     /* margin-left: 1rem; */
 }
 
-footer {
+footer, .footer {
     position: absolute;
+    text-align: center;
     color: white;
     font-size: 2rem;
     margin-top: auto;
     bottom: 0;
 }
+
