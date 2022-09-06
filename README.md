@@ -4,6 +4,9 @@ A ToDo App themed around the tech job hunt(known as Huntober within the 100Devs 
 
 A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, Andrea Pang, and Harry Ashenden.
 
+**Live Site:** [https://huntober.herokuapp.com](https://huntober.herokuapp.com)
+<a href="https://huntober.herokuapp.com"><img src="https://user-images.githubusercontent.com/96756923/188751960-ab21ab65-d041-4dc7-97f8-7c4e27d2fa96.jpg"></a>
+
 ---
 
 ## How It's Made
