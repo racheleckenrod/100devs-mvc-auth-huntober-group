@@ -33,7 +33,7 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
       <td width="50%">
         <p align="center"><a href="https://github.com/ramblingadam"><img src="https://avatars.githubusercontent.com/u/96756923?s=120&v=4"></a><br /> 
         <strong>Adam Morsa</strong><br /> 
-          I'm adam and I learned this</p>
+          I learned how to organize, blueprint, and delegate an open-source project while getting great practice with passing data back and forth between the client and the server in an MVC-structured application.</p>
       </td>
       <td width="50%">
         <p align="center"><a href="https://github.com/racheleckenrod"><img src="https://avatars.githubusercontent.com/u/101522574?s=120&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"></a><br />
