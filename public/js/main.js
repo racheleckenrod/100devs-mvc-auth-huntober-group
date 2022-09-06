@@ -3,6 +3,7 @@ const todoItem = document.querySelectorAll('span.not')
 const todoComplete = document.querySelectorAll('span.completed')
 const hitListButtonUp = document.querySelector('#add').addEventListener('click', hitListUp)
 const hitListButtonDown = document.querySelector('#minus').addEventListener('click', hitListDown)
+const editBtn = document.querySelectorAll('.edit')
 
 const categories = document.querySelectorAll('.category')
 
@@ -21,6 +22,30 @@ Array.from(todoComplete).forEach((el)=>{
 Array.from(categories).forEach(categoryBtn => {
     categoryBtn.addEventListener('click', updateCategory)
 })
+
+Array.from(editBtn).forEach((el)=>{
+  el.addEventListener('click', editTodo)
+})
+
+async function editTodo(){
+  const todoId = this.parentNode.dataset.id
+  const currentTask = this.parentNode.dataset.todo
+  const newName = window.prompt('Enter new task name:', currentTask)
+  try {
+    const response = await fetch('todos/edit', {
+        method: 'put',
+        headers: {'Content-type': 'application/json'},
+            body: JSON.stringify({
+                'todoIdFromJSFile': todoId,
+                'newName': newName
+            })
+        
+    })
+    location.reload()
+  } catch(err) {
+    console.error(err)
+  }
+}
 
 async function deleteTodo(){
     const todoId = this.parentNode.dataset.id
@@ -77,12 +102,12 @@ async function markIncomplete(){
 }
 
 async function updateCategory(e) {
-    console.log(this.parentNode)
+    // console.log(this.parentNode)
     const userID = this.dataset.user
-    console.log(userID)
-    console.log(e)
+    // console.log(userID)
+    // console.log(e)
     const category = e.target.innerText.toLowerCase()
-    console.log(category)
+    // console.log(category)
     try{
         const response = await fetch('todos/updateCategory', {
             method: 'put',
