@@ -38,7 +38,7 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
       <td width="50%">
         <p align="center"><a href="https://github.com/racheleckenrod"><img src="https://avatars.githubusercontent.com/u/101522574?s=88&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"></a><br />
         <strong>Rachel Eckenrod</strong><br />
-          I'm rachel and I learned that</p>
+          I'm Rachel and I learned a lot about using GitHub in addition to getting more comfortable with the MVC architecture.</p>
       </td>
     </tr>
     <tr width="100%">
