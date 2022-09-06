@@ -167,3 +167,20 @@ select {
 
   flex: 1;
 }
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.footer a {
+  padding: 0 1rem 0 1rem;
+  color: black;
+}
+
+.photoCredit a {
+  color: black;
+}
