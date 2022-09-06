@@ -11,7 +11,9 @@ module.exports = {
             await HitList.create({
                 current: 60,
                 userId: req.user.id})
-            console.log('Hitlist has been created!')
+            // const createdHitlist = await HitList.find({userId: req.user.id})
+            
+            // console.log('Hitlist has been created!', createdHitlist)
             // res.redirect('/todos')
         }catch(err){
             console.log(err)
