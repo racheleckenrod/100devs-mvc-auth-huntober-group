@@ -129,6 +129,11 @@ thead td {
 .task-row:hover .actions-cell {
   text-shadow: none;
 }
+
+.edit:hover {
+  text-shadow: 0 0 3px green, 0 0 4px green;
+}
+
 .del:hover {
   text-shadow: 0 0 1px red, 0 0 2px red;
 }
