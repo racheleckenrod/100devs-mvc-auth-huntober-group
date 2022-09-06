@@ -65,6 +65,7 @@ body {
     --heading-color: orange;
     --text-shadow: 0 0 1px black, -2px 2px 3px black;
     --text-stroke: 0 0 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 1px 1px black, 0 -1px 1px black;
+    --text-stroke-white: 0 0 1px white, -1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, 1px 1px 1px white, 1px 0 1px white, -1px 0 1px white, 0 1px 1px white, 0 -1px 1px white;
 }
 
 .bold,
@@ -179,7 +180,18 @@ body {
     margin-top: auto;
 }
 
+footer .bold a:hover,
+.footer .bold a:hover {
+    text-shadow: var(--text-stroke-white);
+    transition: .3s;
+}
 
+.footer a {
+    transition: .5s;
+}
+
+
+/* Task Crossed out when completed, or not */
 .completed {
     text-decoration: line-through;
     color: gray;
