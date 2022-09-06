@@ -23,3 +23,23 @@ input[type='email'],
 input[type='text'] {
   font-size: 2rem;
 }
+
+a {
+  color: white;
+  /* font-size: 6rem; */
+  text-decoration: none;
+  /* margin-left: 1rem; */
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: auto;
+  bottom: 0;
+}
+
+footer div a {
+  padding: 0 1rem 0 1rem
+}
