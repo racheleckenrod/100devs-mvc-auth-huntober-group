@@ -33,7 +33,7 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
       <td width="50%">
         <p align="center"><a href="https://github.com/ramblingadam"><img src="https://avatars.githubusercontent.com/u/96756923?s=120&v=4"></a><br /> 
         <strong>Adam Morsa</strong><br />
-          I am creative software engineer with an eye for design. When I'm not coding, I enjoy hiking, camping, and gaming.<br /><br />
+          I'm a creative software engineer with an eye for design. When not coding, I enjoy hiking, camping, and gaming.<br /><br />
           While working on this project, I learned how to organize, blueprint, and delegate an open-source project while getting great practice with passing data back and forth between the client and the server in an MVC-structured application.</p>
       </td>
       <td width="50%">
