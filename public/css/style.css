@@ -67,6 +67,17 @@ body {
     --text-stroke: 0 0 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 1px 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 1px 1px black, 0 -1px 1px black;
 }
 
+.bold,
+.bold a {
+    /* font-variant: small-caps; */
+    font-family: var(--font-family-sans);
+    font-weight: bold;
+    color: var(--heading-color);
+    /* text-shadow: var(--text-shadow); */
+    text-shadow: var(--text-stroke);
+  }
+
+
 /* // BACKGROUND */
 body{
     background-image: url("e-witsoe.jpg");

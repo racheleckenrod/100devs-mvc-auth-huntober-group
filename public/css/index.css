@@ -16,7 +16,7 @@ a {
     /* margin-left: 1rem; */
 }
 
-footer {
+footer, .footer {
     position: absolute;
     text-align: center;
     color: white;
@@ -26,5 +26,5 @@ footer {
 }
 
 footer div a {
-    padding: 0 1rem 0 1rem
+    /* padding: 0 1rem 0 1rem */
 }

@@ -8,14 +8,6 @@ h2:last-child {
 }
 
 
-.bold {
-  /* font-variant: small-caps; */
-  font-family: var(--font-family-sans);
-  font-weight: bold;
-  color: var(--heading-color);
-  /* text-shadow: var(--text-shadow); */
-  text-shadow: var(--text-stroke);
-}
 
 /* ! HITLIST BUTTON STYLES */
 .hitlist-btn {
@@ -188,8 +180,8 @@ select {
 }
 
 .footer a {
-  padding: 0 1rem 0 1rem;
-  color: black;
+  /* padding: 0 1rem 0 1rem; */
+  color: orange;
 }
 
 .photoCredit a {
