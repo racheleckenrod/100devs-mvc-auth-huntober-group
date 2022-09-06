@@ -15,4 +15,6 @@ router.delete('/deleteTodo', todosController.deleteTodo)
 
 router.put('/updateCategory', todosController.updateCategory)
 
+router.post('/populate', todosController.populateDefault)
+
 module.exports = router

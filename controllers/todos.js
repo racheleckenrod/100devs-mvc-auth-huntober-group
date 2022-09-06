@@ -6,21 +6,13 @@ const hitListController = require('./hitList')
 // Create Hitlist function from hitList.js controller
 const createHitList = hitListController.createHitList
 
+//Creating default to dos
+const defaultTodo = require('../models/Todo')
+
 
 
 module.exports = {
 
-    populateDefault: async (req, res) =>{
-        const defaultTodos = [
-            {
-                todo: 'name',
-                dueDate: 'somedate',
-                category: 'category',
-                completed: false,
-                userId: userId
-            },
-        ]
-    },
     getTodos: async (req,res)=>{
         console.log(req.user)
         try{
@@ -101,6 +93,23 @@ module.exports = {
         } catch(err) {
             console.warn(err)
         }
-    }
+    },
+    //Populate default to dos
+    populateDefault: async (req, res) => {
+        const user = req.body.userID
+        defaultTodo.insertMany([
+
+        ])
+        
+        // const defaultTodos = [
+        //     {
+        //         todo: 'name',
+        //         dueDate: 'somedate',
+        //         category: 'category',
+        //         completed: false,
+        //         userId: userId
+        //     },
+        // ]
+    },
 
 }    
