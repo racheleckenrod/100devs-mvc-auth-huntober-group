@@ -2,12 +2,13 @@
 
 A ToDo App themed around the tech job hunt(known as Huntober within the 100Devs community), built using MVC Architecture and with user accounts, auth, encrypted passwords, and more!
 
-A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas 
+A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, Andrea Pang, and Harry Ashenden.
 
 ---
 
 ## How It's Made
 **Tech used:** Node.js, Express, MongoDB, EJS, HTML, CSS, JavaScript
+
 **Packages/Dependencies used:** bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
 
 ### Features of Huntober
@@ -22,25 +23,51 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas
 | **Storage** | User data is stored in a MongoDB database. All password data is hashed before being stored. |
 
 ## The Team
-# Adam Morsa
-I'm adam and I learned this
 
-# Rachel Eckenrod
-I'm rachel and I learned that
+<table width="100%">
+  <tbody>
+    <tr width="100%">
+      <td width="50%">
+        <p align="center"><img src="https://avatars.githubusercontent.com/u/96756923?s=96&v=4"><br /> 
+        <strong>Adam Morsa</strong><br /> 
+          I'm adam and I learned this</p>
+      </td>
+      <td width="50%">
+        <p align="center"><img src="https://avatars.githubusercontent.com/u/101522574?s=88&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"><br />
+        <strong>Rachel Eckenrod</strong><br />
+          I'm rachel and I learned that</p>
+      </td>
+    </tr>
+    <tr width="100%">
+      <td width="50%">
+        <p align="center"><img src="https://avatars.githubusercontent.com/u/11248186?s=120&v=4"><br />
+        <strong>Atlas McKinley</strong><br />
+          I'm Atlas and I learned that</p>
+      </td>
+      <td width="50%">
+        <p align="center"><img src="https://avatars.githubusercontent.com/u/98671035?s=120&v=4"><br />
+        <strong>Andrea Pang</strong><br />
+          I'm Andrea and I learned that</p>
+      </td>
+    </tr>
+    <tr width="100%">
+      <td colspan="2" width="50%">
+        <p align="center"><img src="https://avatars.githubusercontent.com/u/102705123?s=120&v=4"><br />
+         <strong>Harry Ashenden</strong><br />
+          I'm Harry and I learned that</p>
+      </td>
+    </tr>
+  </tbody>
+      
+        
+</table>
+
 
 ---
 
 ## Optimizations
 
 TODO
-
----
-
-## Lessons Learned:
-
-Adam:
-
-Rachel:
 
 ---
 
@@ -66,26 +93,12 @@ Take a look at these other awesome projects from my portfolio:
 [![Screenshot of NASA Astronomy Photo/Video Browser](https://user-images.githubusercontent.com/96756923/170848850-67f872fc-b92e-438b-add6-47d83673d3c9.gif)](https://github.com/ramblingadam/nasapod)
 
 
-
-# Packages/Dependencies used 
-
-bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
-
 ---
 
-# Install all the dependencies or node packages used for development via Terminal
+## To run this code on your own fork:
 
-`npm install` 
-
----
-
-# Things to add
+- Install all dependencies with `npm install`
 
 - Create a `.env` file and add the following as `key: value` 
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
- ---
- 
- Have fun testing and improving it! 😎
-
-
