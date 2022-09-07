@@ -9,14 +9,15 @@
     <title>Huntober - Sign Up</title>
 </head>
 <body>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
+
     <div class="container">
         <div class="content">
             <h1 class="header-text">Sign Up</h1>
+                <% if (locals.messages.errors) { %>
+                    <% messages.errors.forEach( el => { %>
+                        <div class="alert alert-danger bold"><%= el.msg %></div>
+                    <% }) %>   
+                <% } %>
         <form action="/signup" method="POST">
             <div class="row form-row">
                 <input type="text" name="userName" placeholder="User Name">
