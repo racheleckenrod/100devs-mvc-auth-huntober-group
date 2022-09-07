@@ -53,7 +53,7 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
       <td width="50%">
         <p align="center"><a href="https://github.com/andiedoescode"><img src="https://avatars.githubusercontent.com/u/98671035?s=120&v=4"></a><br />
         <strong>Andrea Pang</strong><br />
-          I'm Andrea and I learned that</p>
+          On this project, I increased my familiarity with MVC architecture, GitHub, and the Mongoose library. It also provided an opportunity to apply Agile methodology in an open-source environment and producing an MVP.</p>
       </td>
     </tr>
     <tr width="100%">
