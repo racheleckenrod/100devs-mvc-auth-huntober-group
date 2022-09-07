@@ -60,7 +60,9 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
       <td colspan="2" width="50%">
         <p align="center"><a href="https://github.com/Harry-Ashenden"><img src="https://avatars.githubusercontent.com/u/102705123?s=120&v=4"></a><br />
          <strong>Harry Ashenden</strong><br />
-          I'm Harry and I learned that</p>
+          I'm a full stack software engineer who loves working with others to create practical and useful applications. When I am not working I am usually found surfing, climbing or walking in the mountains.
+          <br /><br />
+          In this project I increased my github knowledge by working on assigned issues and linked pull requests. I also cemented MVC architecture and learned the process of user authentication.</p>
       </td>
     </tr>
   </tbody>
