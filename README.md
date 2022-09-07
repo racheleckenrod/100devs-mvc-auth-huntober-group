@@ -25,6 +25,8 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
 | **Categories** | Tasks can be sorted into several pre-defined categories to keep things organized. |
 | **Storage** | User data is stored in a MongoDB database. All password data is hashed before being stored. |
 
+---
+
 ## The Team
 
 <table width="100%">
@@ -75,6 +77,16 @@ TODO
 
 ---
 
+## To run this code on your own fork:
+
+- Install all dependencies with `npm install`
+
+- Create a `.env` file and add the following as `key: value` 
+  - PORT: 2121 (can be any port example: 3000) 
+  - DB_STRING: `your database URI` 
+
+---
+
 ## Other Projects:
 Take a look at these other awesome projects from my portfolio:
 
@@ -95,14 +107,3 @@ Take a look at these other awesome projects from my portfolio:
 **The Universe Console** [https://github.com/ramblingadam/nasapod](https://github.com/ramblingadam/nasapod)
 
 [![Screenshot of NASA Astronomy Photo/Video Browser](https://user-images.githubusercontent.com/96756923/170848850-67f872fc-b92e-438b-add6-47d83673d3c9.gif)](https://github.com/ramblingadam/nasapod)
-
-
----
-
-## To run this code on your own fork:
-
-- Install all dependencies with `npm install`
-
-- Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 
