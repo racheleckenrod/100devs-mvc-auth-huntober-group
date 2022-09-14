@@ -1,6 +1,6 @@
 ## Huntober
 
-A ToDo App themed around the tech job hunt(known as Huntober within the 100Devs community), built using MVC Architecture and with user accounts, auth, encrypted passwords, and more!
+A full-stack ToDo application themed around the tech job hunt(known as Huntober within the 100Devs community), built using MVC Architecture and with user accounts, auth, encrypted passwords, and more!
 
 A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, Andrea Pang, and Harry Ashenden.
 
@@ -25,39 +25,44 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
 | **Categories** | Tasks can be sorted into several pre-defined categories to keep things organized. |
 | **Storage** | User data is stored in a MongoDB database. All password data is hashed before being stored. |
 
+---
+
 ## The Team
 
 <table width="100%">
   <tbody>
     <tr width="100%">
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/96756923?s=96&v=4"><br /> 
-        <strong>Adam Morsa</strong><br /> 
-          I'm adam and I learned this</p>
+        <p align="center"><a href="https://github.com/ramblingadam"><img src="https://avatars.githubusercontent.com/u/96756923?s=120&v=4"></a><br /> 
+        <strong>Adam Morsa</strong><br />
+          I'm a creative software engineer with an eye for design. When not coding, I enjoy hiking, camping, and gaming.<br /><br />
+          While working on this project, I learned how to organize, blueprint, and delegate an open-source project while getting great practice with passing data back and forth between the client, the server, and the database in an MVC-structured full-stack application.</p>
       </td>
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/101522574?s=88&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"><br />
+        <p align="center"><a href="https://github.com/racheleckenrod"><img src="https://avatars.githubusercontent.com/u/101522574?s=120&u=018a6099f50494c651644a207c20a6ab11ca1de7&v=4"></a><br />
         <strong>Rachel Eckenrod</strong><br />
           I'm Rachel and I learned a lot about using GitHub in addition to getting more comfortable with the MVC architecture.</p>
       </td>
     </tr>
     <tr width="100%">
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/11248186?s=120&v=4"><br />
+        <p align="center"><a href="https://github.com/atlasmac"><img src="https://avatars.githubusercontent.com/u/11248186?s=120&v=4"></a><br />
         <strong>Atlas McKinley</strong><br />
           I'm Atlas and I learned that</p>
       </td>
       <td width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/98671035?s=120&v=4"><br />
+        <p align="center"><a href="https://github.com/andiedoescode"><img src="https://avatars.githubusercontent.com/u/98671035?s=120&v=4"></a><br />
         <strong>Andrea Pang</strong><br />
-          I'm Andrea and I learned that</p>
+          On this project, I increased my familiarity with MVC architecture, GitHub, and the Mongoose library. It also provided an opportunity to apply Agile methodology in an open-source environment and producing an MVP.</p>
       </td>
     </tr>
     <tr width="100%">
       <td colspan="2" width="50%">
-        <p align="center"><img src="https://avatars.githubusercontent.com/u/102705123?s=120&v=4"><br />
+        <p align="center"><a href="https://github.com/Harry-Ashenden"><img src="https://avatars.githubusercontent.com/u/102705123?s=120&v=4"></a><br />
          <strong>Harry Ashenden</strong><br />
-          I'm Harry and I learned that</p>
+          I'm a full stack software engineer who loves working with others to create practical and useful applications. When I am not working I am usually found surfing, climbing or walking in the mountains.
+          <br /><br />
+          In this project I increased my github knowledge by working on assigned issues and linked pull requests. I also cemented MVC architecture and learned the process of user authentication.</p>
       </td>
     </tr>
   </tbody>
@@ -71,6 +76,16 @@ A collaborative project built by Adam Morsa, Rachel Eckenroad, Atlas McKenzie, A
 ## Optimizations
 
 TODO
+
+---
+
+## To run this code on your own fork:
+
+- Install all dependencies with `npm install`
+
+- Create a `.env` file and add the following as `key: value` 
+  - PORT: 2121 (can be any port example: 3000) 
+  - DB_STRING: `your database URI` 
 
 ---
 
@@ -94,14 +109,3 @@ Take a look at these other awesome projects from my portfolio:
 **The Universe Console** [https://github.com/ramblingadam/nasapod](https://github.com/ramblingadam/nasapod)
 
 [![Screenshot of NASA Astronomy Photo/Video Browser](https://user-images.githubusercontent.com/96756923/170848850-67f872fc-b92e-438b-add6-47d83673d3c9.gif)](https://github.com/ramblingadam/nasapod)
-
-
----
-
-## To run this code on your own fork:
-
-- Install all dependencies with `npm install`
-
-- Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 

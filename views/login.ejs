@@ -9,19 +9,19 @@
     <title>Huntober - Login</title>
 </head>
 <body>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <% if (locals.messages.info) { %>
-        <% messages.info.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
     <div class="container">
         <div class="content">
             <h1 class="header-text">Login</h1>
+            <% if (locals.messages.errors) { %>
+                <% messages.errors.forEach( el => { %>
+                    <div class="alert alert-danger bold"><%= el.msg %></div>
+                <% }) %>    
+            <% } %>
+            <% if (locals.messages.info) { %>
+                <% messages.info.forEach( el => { %>
+                    <div class="alert alert-danger bold"><%= el.msg %></div>
+                <% }) %>    
+            <% } %>
             <form action="/login" method="POST">
                 <div class="row form-row">
                     <label for="">
